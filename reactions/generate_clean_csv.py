@@ -135,6 +135,5 @@ for i in range(bits_per_vector):
 
 	print("Loaded p1_bit" + str(i) + " file")
 
-print("Useless p1:" + str(len(useless_p1_bits)))
-print("Useless r1:" + str(len(useless_r1_bits)))
-print("Useless r2:" + str(len(useless_r2_bits)))
+print("Number of rule lists:" + str(bits_per_vector - len(useless_p1_bits)))
+print("Number of rules per rule list:" + str(2 * bits_per_vector - (len(useless_r1_bits) + len(useless_r2_bits))))
