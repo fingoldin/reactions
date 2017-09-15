@@ -123,10 +123,9 @@ for i in range(bits_per_vector):
 	writer.writerow(features_list)
 
 	for row in rows:
-		string_row = row["r1_fps"] + row["r2_fps"]
+		string_row = row["r1_fps"] + row["r2_fps"] + row["p1_fps"][i]
 
 		list_row = list(string_row)
-		list_row.append(row["p1_fps"][i])
 
 		#print(str(i) + "  " + str(len(string_row)) + "  " + str(len(features_list)))
 		assert(len(list_row) == len(features_list))
