@@ -78,7 +78,8 @@ for row in rows:
 	row["r2_fps"] = temp_r2
 
 for i in range(bits_per_vector):
-	count_ones = 0
+	useless0 = True
+	useless1 = True
 
 	for row in rows:
 		#print("p1_fps" + str(i) + ": " + clean(row["p1_fps"])[i])
