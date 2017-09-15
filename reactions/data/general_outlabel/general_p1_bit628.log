@@ -1,6 +1,6 @@
 total_time,evaluate_children_time,node_select_time,rule_evaluation_time,lower_bound_time,lower_bound_num,objective_time,objective_num,tree_insertion_time,tree_insertion_num,queue_insertion_time,evaluate_children_num,permutation_map_insertion_time,permutation_map_insertion_num,permutation_map_memory,current_lower_bound,tree_min_objective,tree_prefix_length,tree_num_nodes,tree_num_evaluated,tree_memory,queue_size,queue_min_length,queue_memory,pmap_size,pmap_null_num,pmap_discard_num,log_remaining_space_size,prefix_lengths
-1.90735e-06,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,
-7.00951e-05,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,8,1,0,8,0,0,0,1,0:1;
-0.000108004,0,9.53674e-07,0,0,0,0,0,0,1,0,0,0,0,0,0.01,0,0,0,0,18446744073709551512,0,0,8,0,0,0,1,0:1;
-0.000257969,0,9.53674e-07,0,0,0,0,0,0,1,0,0,0,0,0,0.01,0,0,0,0,18446744073709551512,0,0,8,0,0,0,1,0:1;
-0.000370979,0,9.53674e-07,0,0,0,0,0,0,1,0,0,0,0,0,0.01,0,0,0,0,18446744073709551512,0,0,8,0,0,0,1,0:1;
+9.53674e-07,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,
+8.39233e-05,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,8,1,0,8,0,0,0,1,0:1;
+0.00014782,0,9.53674e-07,0,0,0,0,0,0,1,0,0,0,0,0,0.01,0,0,0,0,18446744073709551512,0,0,8,0,0,0,1,0:1;
+0.000688791,0,9.53674e-07,0,0,0,0,0,0,1,0,0,0,0,0,0.01,0,0,0,0,18446744073709551512,0,0,8,0,0,0,1,0:1;
+0.000936985,0,9.53674e-07,0,0,0,0,0,0,1,0,0,0,0,0,0.01,0,0,0,0,18446744073709551512,0,0,8,0,0,0,1,0:1;
