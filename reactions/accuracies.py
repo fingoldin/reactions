@@ -6,6 +6,7 @@ data_dir = "data/general_outlabel/"
 c = 0.01
 
 lowest = 1.0
+thresh = 0.9
 
 for csv_file_path in os.listdir(data_dir):
     if not csv_file_path[-3:] == "log":
@@ -22,7 +23,8 @@ for csv_file_path in os.listdir(data_dir):
         if acc > accuracy:
             accuracy = acc
 
-    print(csv_file_path + ":  " + str(accuracy))
+    if accuracy < thresh:
+        print(csv_file_path + ":  " + str(accuracy))
 
     if accuracy < lowest:
         lowest = accuracy

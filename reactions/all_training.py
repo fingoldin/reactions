@@ -16,5 +16,6 @@ l = pycorels.fastmine(bout_file, cardinality, min_support, gates)
 for fn in os.listdir(data_dir):
     if fn[-5:] == "label":
         log = data_dir + fn[:-6] + ".log"
-        if not os.path.isfile(log):
-        	pycorels.run(l, data_dir + fn, c = c, max_num_nodes=maxnodes, log_file=log, verbosity="log,label,progress")
+        opt = data_dir + fn[:-6] + ".opt"
+        if not os.path.isfile(log) or not os.path.isfile(opt):
+        	pycorels.run(l, data_dir + fn, c = c, max_num_nodes=maxnodes, log_file=log, opt_file=opt, verbosity="log,label,progress")

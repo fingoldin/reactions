@@ -61,6 +61,6 @@ for csv_file_path in os.listdir(data_dir):
             line0 += "1 "
         line1 += str(bit) + " "
 
-    labelfp.write(line0 + "\n" + line1)
+    labelfp.write(line0 + "\n" + line1 + "\n")
 
     print("Generated " + label_path)
