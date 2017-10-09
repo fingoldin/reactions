@@ -15,7 +15,9 @@ csv_dir = "data/clean_csv/"
 
 min_accuracy = 0.95
 
-maxnodes = [100, 1000, 10000, 100000, 1000000, 10000000]
+verbosity = "log,silent"
+
+maxnodes = [100, 1000, 10000, 100000, 1000000]
 cardinality = 2
 min_support = 0.001
 c = 0.01
@@ -23,6 +25,8 @@ gates = 2
 map_type = 0
 
 train_test_split = 120
+
+generate_bits = [1, 18, 286, 352, 420]
 
 
 def csplit(rules, indices):
@@ -128,12 +132,21 @@ train_out_list,test_out_list = csplit(expanded_all_out_list, [train_test_split])
 pycorels.tofile(train_out_list, train_out_file)
 pycorels.tofile(test_out_list, test_out_file)
 
+
+
 for p1_bit,labels in train_labels_dict.items():
+#    if int(p1_bit[6:]) not in generate_bits:
+#        continue
+
     log = train_dir + p1_bit + ".log"
     opt = train_dir + p1_bit + ".opt"
+    #if not os.path.isfile(opt):
     for nnodes in maxnodes:
-        a = pycorels.run(train_out_file, labels, c = c, max_num_nodes=nnodes, map_type = map_type, log_file=log, opt_file=opt, verbosity="log,progress")
+            a = pycorels.run(train_out_file, labels, c = c, opt_file=opt, max_num_nodes=nnodes, map_type = map_type, log_file=log, verbosity=verbosity)
 
-        if a > min_accuracy:
-            print("Accuracy: " + str(a))
-            continue
+            if a > min_accuracy:
+                print("Accuracy: " + str(a))
+                continue
+
+    if a < min_accuracy:
+    	    print("Accuracy: " + str(a))

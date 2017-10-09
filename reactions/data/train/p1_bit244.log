@@ -1,0 +1,6 @@
+total_time,evaluate_children_time,node_select_time,rule_evaluation_time,lower_bound_time,lower_bound_num,objective_time,objective_num,tree_insertion_time,tree_insertion_num,queue_insertion_time,evaluate_children_num,permutation_map_insertion_time,permutation_map_insertion_num,permutation_map_memory,current_lower_bound,tree_min_objective,tree_prefix_length,tree_num_nodes,tree_num_evaluated,tree_memory,queue_size,queue_min_length,queue_memory,pmap_size,pmap_null_num,pmap_discard_num,log_remaining_space_size,prefix_lengths
+3.8147e-06,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,
+0.000111818,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,8,1,0,8,0,0,0,1,0:1;
+0.000164986,0,1.19209e-06,0,0,0,0,0,0,1,0,0,0,0,0,0.01,0,0,0,0,18446744073709551512,0,0,8,0,0,0,1,0:1;
+0.000458956,0,1.19209e-06,0,0,0,0,0,0,1,0,0,0,0,0,0.01,0,0,0,0,18446744073709551512,0,0,8,0,0,0,1,0:1;
+0.000721931,0,1.19209e-06,0,0,0,0,0,0,1,0,0,0,0,0,0.01,0,0,0,0,18446744073709551512,0,0,8,0,0,0,1,0:1;
